@@ -1,0 +1,123 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: Roboto;
+}
+
+#main {
+    background-color: #67E667;
+    color: #FFF;
+}
+
+#main a{
+    text-decoration: none;
+    color:#eee;
+    font-size: 12px;
+}
+
+#toolbar {
+    height: 80px;
+    display: block;
+    width: 100%;
+    background-color: #00CC00;
+}
+
+#toolbar_line {
+    height: 20px;
+    background-color: #008500;
+}
+
+#table {
+    overflow-x:scroll;
+    display: block;
+    width: 100%;
+}
+
+#contextMenu {
+    width: 150px;
+    min-height: 20px;
+    position: absolute;
+    background-color: #eee;
+    border: 1px solid #666666;
+    display: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+#contextMenu ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    display: block;
+    width: 100%;
+}
+
+#contextMenu ul li {
+    height: 20px;
+    padding: 3px;
+    border-bottom: 1px solid #666666;
+    background-color: #ccc;
+    cursor: pointer;
+    color: #666666;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+}
+
+#contextMenu ul li:hover {
+    background-color: #777777;
+    color: #eee;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+}
+
+.table{
+    border:1px solid #008500;
+    color:#777;
+}
+
+.table td{
+    height: 15px;
+    font-size: 12px;
+    min-width:70px;
+    color:#777;
+    display:table-cell;
+    word-wrap: break-word;
+    border:1px solid #777777;
+
+}
+.table tr td[not-editable='1']{
+    height: 15px;
+    font-size: 12px;
+    text-align:center;
+    font-weight: bold;
+    color:#eee;
+    display:table-cell;
+    min-width:70px;
+    background-color: #008500;
+    border:2px solid #008500;
+}
+.table td[not-editable='1']{
+    min-width:70px;
+    border:1px solid #008500;
+    font-size: 12px;
+}
+
+.table td .td-input{
+    width:100%;
+    background-color: transparent;
+    border:none;
+    height:15px;
+}
+.option{
+    padding:5px;
+    margin-left:5px;
+    background-color: #363636;
+    border-radius: 2px;
+}
+

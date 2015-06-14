@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>iCell</title>
+    <meta charset="UTF-8">
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="assets/css/jquery-ui.min.css"/>
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="assets/css/main.css"/>
+</head>
+<body oncontextmenu="return false;">
+<div id="contextMenu">
+    <ul>
+        <li id="new_row">Add Row</li>
+        <li id="new_col">Add Column</li>
+    </ul>
+</div>
+<div id="main">
+    <div id="toolbar">
+        <div id="toolbar_line"><a href="#" id="new_table">New Table</a></div>
+        <a href="#" class="option" id="align_center"><i class="fa fa-align-center"></i></a>
+        <a href="#" class="option" id="align_left"><i class="fa fa-align-left"></i></a>
+        <a href="#" class="option" id="align_right"><i class="fa fa-align-right"></i></a>
+        <a href="#" class="option" id="align_justify"><i class="fa fa-align-justify"></i></a>
+        Fonts:
+        <div id="font-box" style="display: inline">
+            <select id="font-family">
+                <option value="Roboto">Roboto</option>
+                <option value="Arial, Helvetica, sans-serif">Arial, Helvetica, sans-serif</option>
+                <option value='"Palatino Linotype", "Book Antiqua", Palatino, serif'>"Palatino Linotype", "Book
+                    Antiqua", Palatino, serif
+                </option>
+                <option value='"Times New Roman", Times, serif'>"Times New Roman", Times, serif</option>
+                <option value='"Arial Black", Gadget, sans-serif'>"Arial Black", Gadget, sans-serif</option>
+                <option value='"Comic Sans MS", cursive, sans-serif'>"Comic Sans MS", cursive, sans-serif</option>
+                <option value='Impact, Charcoal, sans-serif'>Impact, Charcoal, sans-serif</option>
+                <option value='"Lucida Sans Unicode", "Lucida Grande", sans-serif'>"Lucida Sans Unicode", "Lucida
+                    Grande", sans-serif
+                </option>
+                <option value='"Trebuchet MS", Helvetica, sans-serif'>"Trebuchet MS", Helvetica, sans-serif</option>
+            </select>
+            Font Size:
+            <select id="font-size">
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12" selected>12</option>
+                <option value="14">14</option>
+                <option value="16">16</option>
+                <option value="18">18</option>
+                <option value="20">20</option>
+                <option value="22">22</option>
+                <option value="24">24</option>
+                <option value="26">26</option>
+                <option value="28">28</option>
+                <option value="30">30</option>
+                <option value="32">32</option>
+            </select>
+            Options:
+            <a href="#" class="option" id="bold"><i class="fa fa-bold"></i></a>
+            <a href="#" class="option" id="italic"><i class="fa fa-italic"></i></a>
+            <a href="#" class="option" id="underline"><i class="fa fa-underline"></i></a>
+            <a href="#" class="option" id="font-color"><i class="fa fa-paint-brush"></i></a>
+            <a href="#" class="option" id="bg_color_btn"><i class="fa fa-bitbucket"></i></a>
+            <input type="color" style="display:none" id="c_picker"/>
+            <input type="color" style="display:none" id="bg_color"/>
+        </div>
+    </div>
+    <div id="table">
+
+    </div>
+</div>
+
+
+<!-- SCRIPTS -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/selector.js"></script>
+<script src="assets/js/jquery-ui.min.js"></script>
+<script src="assets/js/functions.js"></script>
+<script src="assets/js/options.js"></script>
+<script src="assets/js/context.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
